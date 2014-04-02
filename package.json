@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"author": "Jay Ryoo <jay.ryoo@gmail.com>",
 	"dependencies": {
-	
+		"request": "*"
 	},
 	"keywords": [
 		"basis",
@@ -14,7 +14,7 @@
 	],
 	"repository": "git://github.com/jryoo/basisAPI",
 	"engines": {
-		"node": ">= 0.8.0"
+		"node": "*"
 	},
 	"license": "MIT"
 }
