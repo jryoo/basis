@@ -4,7 +4,8 @@
 	"version": "0.0.1",
 	"author": "Jay Ryoo <jay.ryoo@gmail.com>",
 	"dependencies": {
-		"request": "*"
+		"request": "*",
+		"moment": "*"
 	},
 	"keywords": [
 		"basis",
