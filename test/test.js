@@ -1,14 +1,10 @@
-var request = require('request');
 var basis = require('./../index');
+var fs = require('fs');
 
-var requestOptions = {
-    url: 'https://app.mybasis.com/login',
-    method: 'POST',
-    encoding: null,
-    json: {"next": "https://app.mybasis.com", "username": "jay.ryoo@gmail.com", "password": "kpjaeyoung181", "submit": "Login"}
-}
+basis.init("jay.ryoo@gmail.com", "kpjaeyoung181", function(error, response, body) {
+    basis.pysData('2014-03-20', undefined, function(error, response, body) {
+        fs.writeFile("./test/tmp/test.txt", body, function(err) {
 
-request(requestOptions, function(error, response, body) {
-    console.dir(response.headers['set-cookie']);
-    console.dir(cookieParser.parse(response.headers['set-cookie'][0]));
+        });
+    });
 });
