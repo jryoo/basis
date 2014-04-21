@@ -5,7 +5,8 @@
 	"author": "Jay Ryoo <jay.ryoo@gmail.com>",
 	"dependencies": {
 		"request": "*",
-		"moment": "*"
+		"moment": "*",
+		"async": "*"
 	},
 	"keywords": [
 		"basis",
